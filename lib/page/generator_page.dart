@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_tutorial/big_card.dart';
+import 'package:todo_tutorial/environment/environment_config.dart';
 import 'package:todo_tutorial/history_list_view.dart';
 import 'package:todo_tutorial/todo_app_state.dart';
 
@@ -45,7 +46,8 @@ class GeneratorPage extends StatelessWidget {
                 onPressed: () {
                   appState.getNext();
                 },
-                child: Text('Next'),
+                // child: Text('Next'),
+                child: Text(EnvironmentConfig.ENV_NAME),
               ),
             ],
           ),
